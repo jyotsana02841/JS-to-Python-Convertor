@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+/* Navbar */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #161b22;
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+nav .logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #58a6ff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #c9d1d9;
+  transition: color 0.3s;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #58a6ff;
+  background: #21262d;
+}
+
+/* Main How It Works Container */
+.how-container {
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+  background: #161b22;
+  border-radius: 12px;
+  padding: 32px 28px;
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.2);
+}
+
+.how-container h2 {
+  color: #58a6ff;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.how-container ol {
+  margin-left: 18px;
+  margin-bottom: 0;
+}
+
+.how-container li {
+  margin-bottom: 18px;
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+
+.how-container strong {
+  color: #238636;
+}
+
+.how-container p {
+  color: #8b949e;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #161b22;
+  padding: 20px;
+  color: #8b949e;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #30363d;
+}
+
+footer a {
+  color: #58a6ff;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
