@@ -73,6 +73,7 @@ def lexer(js_code):
         return [{'condition': m.group(1).strip(), 'body': m.group(2).strip()}
                 for m in elseif_pattern.finditer(chain_str)]
 
+
     matches = list(if_else_chain_pattern.finditer(js_code))
     for match in matches:
         condition = match.group(1).strip()
